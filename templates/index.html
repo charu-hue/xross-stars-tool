@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Xross Stars 一人回しツール</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  </head>
+  <body>
+    <div class="app">
+      <div class="container">
+        <h1 class="page-title">Xross Stars 一人回しツール</h1>
+        <div id="root"></div>
+      </div>
+    </div>
+
+    <script>
+      window.APP_CONFIG = {
+        apiBase: ""
+      };
+    </script>
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+  </body>
+</html>
